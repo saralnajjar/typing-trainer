@@ -1,4 +1,4 @@
-# typing-trainer
+# Typing Trainer
 
 A command line typing practice tool built in Python. Measures WPM and accuracy across three difficulty modes, and tracks your personal best scores locally.
 
