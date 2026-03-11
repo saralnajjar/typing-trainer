@@ -1,0 +1,32 @@
+[
+  {
+    "wpm": 0.0,
+    "accuracy": 0.0,
+    "elapsed": 4.57,
+    "difficulty": "Easy"
+  },
+  {
+    "wpm": 52.2,
+    "accuracy": 38.5,
+    "elapsed": 5.98,
+    "difficulty": "Easy"
+  },
+  {
+    "wpm": 49.0,
+    "accuracy": 95.2,
+    "elapsed": 5.14,
+    "difficulty": "Easy"
+  },
+  {
+    "wpm": 38.1,
+    "accuracy": 100.0,
+    "elapsed": 5.98,
+    "difficulty": "Easy"
+  },
+  {
+    "wpm": 56.8,
+    "accuracy": 100.0,
+    "elapsed": 4.23,
+    "difficulty": "Easy"
+  }
+]
