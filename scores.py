@@ -1,4 +1,3 @@
-cat > scores.py << 'EOF'
 import json
 import os
 
@@ -55,7 +54,6 @@ def show_stats() -> None:
     print("  STATS")
     print("═" * 60)
 
-    # overall
     all_wpm = [s["wpm"] for s in scores]
     all_acc = [s["accuracy"] for s in scores]
     avg_wpm = round(sum(all_wpm) / len(all_wpm), 1)
@@ -67,7 +65,6 @@ def show_stats() -> None:
     print(f"  Best WPM:      {best_wpm}")
     print(f"  Average Acc:   {avg_acc}%")
 
-    # trend: compare last 5 vs previous 5
     if len(scores) >= 6:
         recent = scores[-5:]
         previous = scores[-10:-5]
@@ -77,7 +74,6 @@ def show_stats() -> None:
         trend = f"↑ +{diff}" if diff > 0 else f"↓ {diff}" if diff < 0 else "→ no change"
         print(f"\n  Trend (last 5 vs previous 5): {trend} WPM")
 
-    # per difficulty
     print("\n  " + "─" * 56)
     print(f"  {'DIFFICULTY':<12} {'SESSIONS':<12} {'AVG WPM':<12} {'BEST WPM'}")
     print("  " + "─" * 56)
@@ -89,4 +85,3 @@ def show_stats() -> None:
             print(f"  {diff:<12} {len(subset):<12} {a:<12} {b}")
 
     print("═" * 60 + "\n")
-EOF
