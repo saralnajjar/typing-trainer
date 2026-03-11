@@ -1,6 +1,6 @@
 from engine import run_test
 from prompts import get_prompt, MODES
-from scores import save_score, show_high_scores
+from scores import save_score, show_high_scores, show_stats
 
 
 def print_banner():
@@ -14,7 +14,8 @@ def select_difficulty() -> tuple:
     for key, (name, _) in MODES.items():
         print(f"    {key}. {name}")
     print("    4. View high scores")
-    print("    5. Quit")
+    print("    5. Stats")
+    print("    6. Quit")
 
     while True:
         choice = input("\n> ").strip()
@@ -23,9 +24,11 @@ def select_difficulty() -> tuple:
         elif choice == "4":
             return "4", "scores"
         elif choice == "5":
-            return "5", "quit"
+            return "5", "stats"
+        elif choice == "6":
+            return "6", "quit"
         else:
-            print("  Please enter 1, 2, 3, 4, or 5.")
+            print("  Please enter 1–6.")
 
 
 def print_results(result: dict) -> None:
@@ -47,9 +50,11 @@ def main():
         if difficulty == "quit":
             print("\n  See you next time!\n")
             break
-
-        if difficulty == "scores":
+        elif difficulty == "scores":
             show_high_scores()
+            continue
+        elif difficulty == "stats":
+            show_stats()
             continue
 
         prompt = get_prompt(mode_key)
