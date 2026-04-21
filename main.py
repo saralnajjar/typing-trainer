@@ -69,4 +69,19 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="CLI typing trainer")
+    parser.add_argument("--mode", choices=["easy", "medium", "hard"], help="Skip menu and start immediately")
+    args = parser.parse_args()
+
+    if args.mode:
+        mode_map = {"easy": "1", "medium": "2", "hard": "3"}
+        mode_key = mode_map[args.mode]
+        difficulty = MODES[mode_key][0]
+        print_banner()
+        prompt = get_prompt(mode_key)
+        result = run_test(prompt)
+        print_results(result)
+        save_score(result, difficulty)
+    else:
+        main()
