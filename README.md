@@ -11,6 +11,10 @@ A command line typing practice tool built in Python. Measures WPM and accuracy a
 - High score tracker and stats saved to `scores.json`
 - `--mode` flag to skip the menu and start immediately
 
+## To Add
+- Real time visuals/feedback
+- Graphing  
+
 ## Setup
 
 ```bash
