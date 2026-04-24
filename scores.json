@@ -64,5 +64,11 @@
     "accuracy": 96.2,
     "elapsed": 5.37,
     "difficulty": "Easy"
+  },
+  {
+    "wpm": 32.0,
+    "accuracy": 21.1,
+    "elapsed": 4.5,
+    "difficulty": "Symbols"
   }
 ]

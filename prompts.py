@@ -31,10 +31,22 @@ HARD = [
     "verbose, convoluted prose obscures rather than illuminates meaning",
 ]
 
+SYMBOLS = [
+    "if x != None and x >= 0: return x * 2",
+    "result = {k: v for k, v in pairs if v is not None}",
+    "assert len(data) > 0, 'expected non-empty list'",
+    "path = os.path.join(base_dir, 'logs', f'{date}.txt')",
+    "lambda x: x ** 2 if x % 2 == 0 else x ** 3",
+    "conn.execute('INSERT INTO logs VALUES (?, ?)', (uid, ts))",
+    "re.match(r'^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z]{2,}$', email)",
+    "headers = {'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'}",
+]
+
 MODES = {
     "1": ("Easy", EASY),
     "2": ("Medium", MEDIUM),
     "3": ("Hard", HARD),
+    "4": ("Symbols", SYMBOLS),
 }
 
 

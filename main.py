@@ -13,23 +13,21 @@ def select_difficulty() -> tuple:
     print("\n  Select difficulty:")
     for key, (name, _) in MODES.items():
         print(f"    {key}. {name}")
-    print("    4. View high scores")
-    print("    5. Stats")
-    print("    6. Quit")
-
+    print("    5. View high scores")
+    print("    6. Stats")
+    print("    7. Quit")
     while True:
         choice = input("\n> ").strip()
         if choice in MODES:
             return choice, MODES[choice][0]
-        elif choice == "4":
-            return "4", "scores"
         elif choice == "5":
-            return "5", "stats"
+            return "5", "scores"
         elif choice == "6":
-            return "6", "quit"
+            return "6", "stats"
+        elif choice == "7":
+            return "7", "quit"
         else:
-            print("  Please enter 1–6.")
-
+            print("  Please enter 1–7.")
 
 def print_results(result: dict) -> None:
     print("\n" + "─" * 60)
