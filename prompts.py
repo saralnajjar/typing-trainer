@@ -21,11 +21,14 @@ MEDIUM = [
 ]
 
 HARD = [
-    "encrypt(key=0x3F, mode='CBC') -> bytes | None",
-    "for i, (key, val) in enumerate(data.items()): print(f'{i}: {key} = {val}')",
-    "git commit -m 'fix: resolve merge conflict in auth module (#42)'",
-    "SELECT * FROM users WHERE created_at > '2025-01-01' ORDER BY name ASC;",
-    "raise ValueError(f'expected int, got {type(x).__name__}: {x!r}')",
+    "the juxtaposition of ephemeral and permanent is paradoxical",
+    "ambiguity, though frustrating, is often deliberately cultivated",
+    "the archaeologist meticulously catalogued every artefact",
+    "conscientious, diligent, and tenacious — three underrated virtues",
+    "the bureaucratic labyrinth was, unsurprisingly, impenetrable",
+    "melancholy persists; clarity, however, remains elusive",
+    "the phenomenon was neither unprecedented nor wholly inexplicable",
+    "verbose, convoluted prose obscures rather than illuminates meaning",
 ]
 
 MODES = {

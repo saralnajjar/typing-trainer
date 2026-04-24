@@ -58,5 +58,11 @@
     "accuracy": 4.0,
     "elapsed": 0.95,
     "difficulty": "Easy"
+  },
+  {
+    "wpm": 58.1,
+    "accuracy": 96.2,
+    "elapsed": 5.37,
+    "difficulty": "Easy"
   }
 ]
